@@ -21,8 +21,8 @@
  // Check if any posts
  if($num > 0) {
      // Post array
-     $posts_arr = array();
-     // $posts_arr['data'] = array();
+//     $posts_arr = array();
+      $posts_arr['data'] = array();
 
      while($row = $result->fetch(PDO::FETCH_ASSOC)) {
          extract($row);
@@ -37,8 +37,8 @@
          );
 
          // Push to "data"
-         array_push($posts_arr, $post_item);
-         // array_push($posts_arr['data'], $post_item);
+//         array_push($posts_arr, $post_item);
+          array_push($posts_arr['data'], $post_item);
      }
 
      // Turn to JSON & output
